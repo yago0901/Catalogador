@@ -1,13 +1,14 @@
 import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAQ4W63YV8VotYbKwIPcCIGriBGwXOVBDI",
-  authDomain: "catalogador-dc70d.firebaseapp.com",
-  projectId: "catalogador-dc70d",
-  storageBucket: "catalogador-dc70d.appspot.com",
-  messagingSenderId: "23751166511",
-  appId: "1:23751166511:web:259eb7202fc76a4e0714da",
-  measurementId: "G-YDCFQYQK3B",
+  apiKey: "AIzaSyAMq1RDWdbZqCadsT4Y5xw_T0Fh5VDhge8",
+  authDomain: "conversor-assina.firebaseapp.com",
+  projectId: "conversor-assina",
+  storageBucket: "conversor-assina.appspot.com",
+  messagingSenderId: "793101150635",
+  appId: "1:793101150635:web:ecc28425ee3e648b9b4aee",
 };
 
-export const app = initializeApp(firebaseConfig);
+const app = initializeApp(firebaseConfig);
+export const auth = getAuth(app);
